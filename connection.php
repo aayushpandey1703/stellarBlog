@@ -2,7 +2,7 @@
 $host='stellarblog-server.mysql.database.azure.com';
 $user='vjimpvyxwf';
 $db='shopsky_blog';
-$pass='A@yush1703';
+$pass='';
 $con=  mysqli_connect($host, $user, $pass, $db);
 
 if(!$con)
