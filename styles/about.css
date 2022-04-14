@@ -1,0 +1,467 @@
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  background-color: #ecf2f5;
+}
+/* header section */
+.total-section{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/*Navigation bar of header section */
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
+
+p {
+    margin: 0.5em;
+}
+
+.toggle{
+    display: none;
+}
+
+.bars {
+    background: #00008B;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    top: -3px;
+    width: 18px;
+}
+
+.bars::before, .bars::after{
+    background: #00008B;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    right: 0.3px;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+
+.bars::after {
+    top: -5px;
+}
+
+button{
+    height: 25px;
+    cursor: pointer;
+}
+
+nav{
+    background-color: white;
+    position: -webkit-sticky;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 5% 0;
+    padding: 1% 0 ;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    margin: 0 0.5em;
+}
+
+nav ul li:last-child{
+    background-color: #00008B;
+    border-radius: 5%;
+    color: whitesmoke;
+}
+
+/*nav ul li:hover:not(.login){
+    color: #00008B;
+}*/
+
+nav ul li.active{
+    color: #00008B;
+}
+
+.curve{
+   background-color: #5de6de;
+background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+
+
+     height: 100%;
+     width: 100%;
+     border-radius:0 0 50% 50%;  
+     transform: scaleX(1.5);
+}
+
+.container{
+      z-index: 100;
+      max-width: 1000px;
+      position: absolute;
+      margin:  auto;
+      text-align: center;
+      justify-content: center;
+                
+    }
+
+.container h2{
+      color: white;
+      font-size: 5em;
+      font-family: 'Carter One', cursive;
+ }
+
+ .container p{
+         font-family: 'Playball', cursive;
+         font-size: 1.8em;
+         color: black;
+                
+  }
+
+
+/*1st Section-Who are we?? */
+  .who-are-we{
+        padding: 1.5em;
+        margin-top: 30px;
+     }
+            
+ .who-are-we h2{font-size: 4em;
+                font-family: sans-serif;
+                color: midnightblue;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+ .who-are-we img{
+               margin: 1em;
+                float: right;
+                border-radius: 45%;
+                width: 550px;
+                height: 100%;
+                            }
+.who-are-we img::after{
+    content: '';
+    clear: both;
+}
+ .who-are-we p{
+                margin: 1em;
+                max-width: 650px;
+                font-weight: 500;
+                font-size: 1.35em;
+            }
+
+/*2nd Section What we do?? */
+.what-we-do{
+                background-color: white;
+                margin-top: 100px;
+                padding: 2em;
+            }
+.what-we-do h2{
+                font-size: 3em;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+.what-we-do img{
+                margin-bottom: 10px;
+                height: 250px;
+                width: 100%;
+            }
+ .what-we-do p{
+                max-width: 25em;
+                text-align: match-parent;
+            }
+ .what-we-do h3{
+                font-family: fantasy;
+            }
+.what-we-do .box{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+.what-we-do .box1{
+                background-color: gainsboro;
+                padding: 0.5em;
+                width: 350px;
+                margin: 1em;
+                box-shadow: -10px 5px 10px black;
+            }
+.what-we-do .box1:hover{transform: scale(1.05);   
+            }
+
+
+ /*3rd Section Why choose us*/           
+ .why-choose-us{
+                display: block;
+                padding: 3em;
+                text-align: center;
+            }
+            
+.why-choose-us h2{
+                font-size: 2.5em;
+                font-weight: bold;
+                color: midnightblue;
+            }
+.why-choose-us p{
+                font-weight: 500;
+                margin: 1em;
+            }
+
+
+/*4th Section -Team */            
+ .meet-our-team{
+            background-color: #70a1ff;
+            background-image: linear-gradient(315deg, #70a1ff 0%, #c2c0c0 74%);
+            }
+.meet-our-team div.table-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.meet-our-team .table-content .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 40%;
+    padding: 1em;
+}
+.meet-our-team .table-content .column .row-1{
+    text-align: center;
+    flex: 2;
+}
+.meet-our-team .table-content .column .row-2{
+    flex: 6;
+}
+ .meet-our-team img{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                margin-right: 1.5em;
+            }
+.meet-our-team img:hover{
+                transform: scale(1.2);
+            }
+.meet-our-team h2{
+                color: midnightblue;
+                text-align: center;
+                font-size: 40px;
+                padding: 20px;
+                margin: 50px;
+               font-weight: bolder;
+            }
+            
+ .meet-our-team h4{
+                color: midnightblue;
+                font-weight: 700;
+                margin-top: 20px;
+                font-style: italic;
+                font-size: 23px;
+            }
+            
+.meet-our-team h5{
+                font-size: 20px;
+                color: gray;
+            }
+
+/*Section 5 -Additional section*/
+.additional-section{
+                background-color: white;
+                padding: 3em;
+            }
+            
+.additional-section h2{
+                text-align: center;
+                font-size: 2.5em;
+                font-weight: bold;
+                color: black;
+            }
+.additional-section p{
+                text-align: center;
+                font-weight: 500;
+                margin: 1.6em 2.5em;
+            }
+            
+ footer{
+    margin-top: 1em;
+    background-color: rgba(0,0,21,0.8);
+    color: white;
+}
+footer .footer-container .footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+            .fa{
+                color: white;
+                background-color: white;
+            }          
+.footer-nav .social-media, .footer-nav .footer-navigation, .footer .contact_me {
+    padding: 2em;
+    max-width: 20em;
+    margin: 1em;
+    flex: 2;
+    font-size: large;
+}
+footer .copyright {
+    text-align: center;
+    padding: 1em 3em 3em;
+}
+footer ul{
+    padding: 1em 0;
+}
+footer ul li{
+    padding: 0.5em;
+}
+footer ul li i {
+    padding: 0 1em;
+}
+.contact_me h3{
+    padding: 0 3em;
+}
+
+@media only screen and (max-width: 980px){
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li:not(.items){
+        text-align: center;
+        display: none;
+    }
+    nav ul li.activated {
+        display: block;
+    }
+    .items{
+        display: block;
+        text-align: right;
+    }
+    .container span{
+        font-size: x-large;
+    }
+    .container h1{
+        font-size: 4em;
+    }
+    .recent-container-items{
+        max-width: 20em;
+    }
+    .all_blog_container-items{
+        max-width: 20em;
+    }
+    .footer-nav{
+        flex: 3;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel-caption h1, .carousel-caption p{
+        color: #00008B;
+        font-size: medium;
+        z-index: 5;
+    }
+    .carousel-caption h1{
+        font-size: large;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li:not(.items){
+        text-align: center;
+        display: none;
+    }
+    nav ul li.activated {
+        display: block;
+    }
+    .items{
+        display: block;
+        text-align: right;
+    }
+    .container span{
+        font-size: medium;
+    }
+    .container h1{
+        font-size: 3em;
+    }
+    .recent-container-items{
+        max-width: 20em;
+    }
+    .all_blog_container-items{
+        max-width: 30em;
+    }
+    .footer-nav{
+        max-width: 20em;
+    }
+    .meet-our-team .table-content .column{
+        max-width: 100%;
+        flex-direction: column;
+    }    
+    .additional-section h2{
+        font-size: 1em;
+    }
+    .meet-our-team h2{
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    .what-we-do{
+        padding: 0em;
+    }
+    .what-we-do .box1{
+        margin: 0.5em;
+    }
+    .what-we-do h2 {
+        font-size: 1.5em;
+    }
+    .who-are-we {
+        padding: 0.25em;
+    }
+    .who-are-we img{
+        width: 200px;
+        height: 250px;
+        margin-left: 2em;
+    }
+    .additional-section p{
+        margin: 0;
+    }
+    .why-choose-us {
+        padding: 0.1em;
+    }
+    .who-are-we h2{
+        font-size: x-large;
+    }
+    .why-choose-us h2{
+        font-size: x-large;
+    }
+    .container h2{
+        margin: 1.5em 0 0;
+        font-size: xx-large;
+    }
+    .container p{
+        font-size: x-large;
+    }
+}
+            
+            
